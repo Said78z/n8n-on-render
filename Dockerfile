@@ -8,5 +8,7 @@ WORKDIR /data
 EXPOSE 5678
 
 # Démarre n8n
-CMD ["n8n", "start"]
+FROM n8nio/n8n:latest
+WORKDIR /data
+EXPOSE 5678
 
